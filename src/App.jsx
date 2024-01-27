@@ -8,13 +8,15 @@ import Projects from './components/04_projects/Projects'
 import Resume from './components/05_resume/Resume'
 import Footer from './components/06_footer/Footer'
 
-const Container = styled.div`${tw`w-screen h-screen bg-[#333448] text-white`}`
+const Container = styled.div`${tw`w-screen h-full bg-[#333448] text-white`}`
 
 const App = () => {
   return (
     <Container style={{ fontFamily: 'Montserrat Alternates, sans-serif' }}>
       <Header />
       <Home />
+      <About />
+      <Footer />
     </Container>
   )
 }
