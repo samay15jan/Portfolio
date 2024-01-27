@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import {Progress} from "@nextui-org/react";
 
-const Container = styled.div`${tw`text-xl text-white`}`
+const Container = styled.div`${tw`text-xl`}`
 const Button = styled.button`
 &:hover{
     transform: scale(1.1); 

@@ -4,6 +4,9 @@ import tw from 'twin.macro'
 import Icon from './Icon'
 import Socials from './Socials'
 import Menus from './Menus'
+import { IoHomeSharp, IoHomeOutline, IoDocumentTextSharp, IoDocumentTextOutline } from "react-icons/io5";
+import { FaUser, FaRegUser } from "react-icons/fa";
+import { RiBrush4Line, RiBrush4Fill } from "react-icons/ri";
 
 const Container = styled.div`${tw`w-screen relative flex justify-between py-8 px-16`}`
 

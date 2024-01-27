@@ -10,11 +10,11 @@ const Socials = () => {
   return (
     <Container>
         <a href="https://github.com/samay15jan" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={35} color='white' className='scale-75 hover:animate-pulse hover:scale-100 transition ease-in-out delay-150'/>
+            <FaGithub size={35} color='white' className='scale-75 hover:animate-pulse hover:scale-100 transition ease-in-out'/>
         </a>
 
         <a href="mailto:samay15jan@gmail.com" target="_blank" rel="noopener noreferrer">
-            <TfiEmail size={35} color='white' className='scale-75 hover:animate-pulse hover:scale-100 transition ease-in-out delay-150'/>
+            <TfiEmail size={35} color='white' className='scale-75 hover:animate-pulse hover:scale-100 transition ease-in-out'/>
         </a>
     </Container>
   )
