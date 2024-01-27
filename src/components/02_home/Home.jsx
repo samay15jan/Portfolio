@@ -6,7 +6,7 @@ import Text from './Text'
 import ContactButton from './ContactButton'
 import ScrollDown from './ScrollDown'
 
-const Container = styled.div`${tw`grid grid-cols-2 justify-between`}`
+const Container = styled.div`${tw`pt-36 grid grid-cols-2 justify-between`}`
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
       </div>
         <Art/>
       <div className='grid-cols-1 mr-16'>
-        <Text Top_Text1='Web - ' Top_Text2='Developer' Bottom_Text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam animi cumque pariatur, unde distinctio eum incidunt hic' align='right'/>
+        <Text Top_Text1='Web - ' Top_Text2='Developer' Bottom_Text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam animi cumque' align='right'/>
         <ScrollDown align='right'/>
       </div>
     </Container>

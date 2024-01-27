@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 
 const Container = styled.div`${tw`absolute w-screen flex justify-center`}`
-const Logo = styled.img`${tw`w-2/6 h-auto bg-blend-multiply`}`
+const Logo = styled.img`${tw`w-2/5 mr-12 h-auto bg-blend-multiply`}`
 const Art = () => {
   return (
     <Container>

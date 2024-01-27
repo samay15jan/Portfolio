@@ -8,13 +8,13 @@ import { IoHomeSharp, IoHomeOutline, IoDocumentTextSharp, IoDocumentTextOutline 
 import { FaUser, FaRegUser } from "react-icons/fa";
 import { RiBrush4Line, RiBrush4Fill } from "react-icons/ri";
 
-const Container = styled.div`${tw`w-screen relative flex justify-between py-8 px-16`}`
+const Container = styled.div`${tw`w-screen fixed z-50 flex justify-between py-8 px-16 bg-[#333448] bg-opacity-90`}`
 
 const Header = () => {
   return (
     <Container>
         <Icon/>
-        <div className='mt-1 w-screen flex justify-center space-x-6'>
+        <div className='mt-1 fixed w-screen flex justify-center space-x-6'>
           <Menus Text="Home"/>
           <Menus Text="About"/>
           <Menus Text="Projects"/>
