@@ -18,7 +18,7 @@ const Header = () => {
           <Menus Text="Home"/>
           <Menus Text="About"/>
           <Menus Text="Projects"/>
-          <Menus Text="Resume"/>
+          <Menus Text="Contact"/>
         </div>
         <Socials/>
     </Container>

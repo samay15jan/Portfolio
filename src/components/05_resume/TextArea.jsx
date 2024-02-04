@@ -7,14 +7,13 @@ const Input = styled.input`${tw`w-full mt-3 text-white bg-transparent border-2 b
 &:focus {
   outline: none;
   border-color: #23C562;
-}
-`
+}`
 
-const TextArea = ({ label, type, placeholder }) => {
+const TextArea = ({ label, type, placeholder, change }) => {
   return (
     <div className='my-4'>
       <Label>{label}</Label>
-      <Input type={type} placeholder={placeholder}/>
+      <Input onChange={change} type={type} placeholder={placeholder}/>
     </div>
     )
 }

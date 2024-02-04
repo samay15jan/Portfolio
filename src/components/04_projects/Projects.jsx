@@ -1,8 +1,11 @@
 import React from 'react'
+import Graph from './Graph'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div>Projects
+      <Graph/>
+    </div>
   )
 }
 
