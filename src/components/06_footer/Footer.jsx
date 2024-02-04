@@ -11,7 +11,7 @@ const Footer = () => {
   const year = new Date().getFullYear()
   return (
     <Container>
-      <Divider className='my-4 bg-black pt-1 opacity-20'/>
+      <Divider className='my-4 bg-black opacity-20'/>
       <div>
         <Heading>
             <div>Crafted By</div>

@@ -16,7 +16,6 @@ const SendButton = ({ sendEmail }) => {
   return (
     <div className='my-4'>
       <Button onClick={sendEmail}>Send</Button>
-      
     </div>
     )
 }
