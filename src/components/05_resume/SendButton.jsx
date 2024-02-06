@@ -9,8 +9,7 @@ const Button = styled.button`${tw`w-full mt-3 text-white text-xl font-bold bg-tr
   color: black;
   opacity: 0.8;
   box-shadow: 10px 10px #23C562;
-}
-`
+}`
 
 const SendButton = ({ sendEmail }) => {
   return (

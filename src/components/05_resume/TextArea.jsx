@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import tw from 'twin.macro'
 
-const Label = styled.label`${tw`absolute bg-[#333448] text-lg text-[#23C562] ml-2 px-2`}`
+const Label = styled.label`${tw`absolute z-50 bg-[#333448] text-lg text-[#23C562] ml-2 px-2`}`
 const Input = styled.input`${tw`w-full mt-3 text-white bg-transparent border-2 border-gray-400 p-4 rounded-md`}
 &:focus {
   outline: none;

@@ -20,7 +20,7 @@ const Info = () => {
         </Paragraph>    
         <Skills/>
       </div>
-      <Image className='ml-20 mt-24' width={500} src={Art} alt="Artwork" />
+      <Image className='relative ml-24 mt-24' width={500} src={Art} alt="Artwork" />
     </Container>
   )
 }

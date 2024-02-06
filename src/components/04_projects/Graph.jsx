@@ -11,7 +11,9 @@ const Graph = () => {
 
     setTimeout(() => {
         setShow(true)
-    }, 5000);
+    }, 2000);
+    
+    // Add intersection observe 
 
   return (
     <>
