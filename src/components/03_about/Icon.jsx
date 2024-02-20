@@ -15,11 +15,11 @@ const Icon = ({ Type }) => {
     >
     <Container>
       {Type === 'TwinMacroIcon'
-        ? <div className='w-10'><img src={TwinMacroIcon}/></div>
+        ? <div className='w-8'><img src={TwinMacroIcon}/></div>
         : <motion.div
             whileHover={{ scale: 1.1, rotate: -90 }}
           >
-            <Type size={40} />
+            <Type size={30} />
           </motion.div>
       }
     </Container>

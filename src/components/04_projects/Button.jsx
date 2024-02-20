@@ -18,8 +18,8 @@ const Button = ({ type, link }) => {
       <a href={link} target="_blank" rel="noopener noreferrer">
         <ButtonContainer>
           {type === 'Github'
-              ? <FaGithub size={30} color='black' className='scale-75 hover:animate-pulse hover:scale-100 transition ease-in-out mr-1'/>
-              : <SiDocsdotrs size={30} color='black' className='scale-75 hover:animate-pulse hover:scale-100 transition ease-in-out mr-1'/>
+              ? <FaGithub size={20} color='black' className=' mt-1 scale-75 hover:animate-pulse hover:scale-100 transition ease-in-out mr-1'/>
+              : <SiDocsdotrs size={20} color='black' className='mt-1 scale-75 hover:animate-pulse hover:scale-100 transition ease-in-out mr-1'/>
           }
           {type}
       </ButtonContainer>

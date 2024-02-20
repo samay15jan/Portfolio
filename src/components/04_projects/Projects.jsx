@@ -1,14 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Graph from './Graph'
 import Card from './Card'
 import Bingelord from '../../assets/projects/Bingelord.png'
 import Porsche_Replicant from '../../assets/projects/Porsche_Replicant.png'
 import Quantum_Quest from '../../assets/projects/Quantum_Quest.png'
 import ThoughtScape from '../../assets/projects/ThoughtScape.png'
-import { motion, AnimatePresence } from 'framer-motion'
 
 const Projects = () => {
-  const [selectedId, setSelectedId] = useState(null)
 
   const projects = [
     {
@@ -47,27 +45,13 @@ const Projects = () => {
         Here are a few of my projects i've worked on recently.
       </label>
 
-      {selectedId
-        ? <AnimatePresence>
-            {selectedId && (
-            <motion.div layoutId={selectedId}>
-            {projects.filter((item) => item.id === selectedId).map((project)=> (
-              <div onClick={() => setSelectedId(null)} >
+      <div className='grid grid-cols-4'>
+            {projects.map((project) => (
+              <div layoutId={project.id}>
                 <Card name={project.name} src={project.src}/>
-                <motion.button/>
               </div>
             ))}
-            </motion.div>
-            )}
-          </AnimatePresence>
-        : <div className='grid grid-cols-2'>
-            {projects.map((project) => (
-              <motion.div layoutId={project.id} onClick={() => setSelectedId(project.id)}>
-                <Card name={project.name} src={project.src}/>
-              </motion.div>
-            ))}
-        </div>
-      }
+      </div>
       <Graph/>
     </div>
   )
