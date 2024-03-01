@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import { motion, useAnimation } from 'framer-motion';
 
-const Container = styled.div`${tw`mb-32 mt-8 mr-10 relative`}`
+const Container = styled.div`${tw`mb-32 lg:mt-8 mt-96 mr-10 relative`}`
 const Button = styled.button(({ hideArrow }) => [
   hideArrow
     ? tw`mt-12 mr-9 w-14 h-14 rounded-full`
@@ -92,7 +92,6 @@ const ScrollDown = ({ align, scrollToAbout }) => {
         />
         </svg>
       </svg>
-
     </Button>
     </Container>
   )

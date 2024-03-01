@@ -4,6 +4,7 @@ import Bingelord from '../../assets/projects/Bingelord.png'
 import Porsche_Replicant from '../../assets/projects/Porsche_Replicant.png'
 import Quantum_Quest from '../../assets/projects/Quantum_Quest.png'
 import ThoughtScape from '../../assets/projects/ThoughtScape.png'
+import Graph from './Graph'
 
 const Projects = ({ targetRef }) => {
 
@@ -40,17 +41,18 @@ const Projects = ({ targetRef }) => {
       </div>
       </label>
 
-      <label className='text-lg flex justify-center mb-10'>
+      <label className='text-lg flex text-center justify-center mb-12 lg:mb-10 lg:mx-0 mx-10'>
         Here are a few of my projects i've worked on recently.
       </label>
 
-      <div className='grid grid-cols-4'>
+      <div className='grid lg:grid-cols-4'>
             {projects.map((project) => (
               <div layoutId={project.id}>
                 <Card name={project.name} src={project.src}/>
               </div>
             ))}
       </div>
+      <Graph />
     </div>
   )
 }

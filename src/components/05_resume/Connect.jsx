@@ -5,7 +5,7 @@ import { Image } from '@nextui-org/react'
 
 const Connect = () => {
   return (
-    <div>
+    <div className='lg:block hidden'>
       <img className='absolute mt-2 left-0 opacity-50' src={SVG} alt="svg" />
       <Image src={Art} className='w-full mt-40 ml-[-130px] hover:animate-pulse' alt='connect'/>
     </div>

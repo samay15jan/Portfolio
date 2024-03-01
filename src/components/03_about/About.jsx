@@ -5,9 +5,9 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import Skills from './Skills'
 
-const Container = styled.div`${tw`grid grid-cols-2 pt-32 mx-24 ml-36 text-center`}`
-const Heading = styled.h2`${tw`text-2xl flex mb-5 justify-center`}`
-const Paragraph = styled.p`${tw`text-lg opacity-70`}`
+const Container = styled.div`${tw`grid lg:grid-cols-2 lg:mx-24 lg:ml-36 text-center`}`
+const Heading = styled.h2`${tw`lg:mt-32 w-screen lg:w-auto text-4xl lg:text-4xl flex mb-5 justify-center`}`
+const Paragraph = styled.p`${tw`w-screen lg:w-auto text-lg opacity-70`}`
 
 const About = ({ targetRef }) => {
   return (
@@ -15,10 +15,11 @@ const About = ({ targetRef }) => {
       <div>
         <Heading>Know Who<div className='text-[#23C562] ml-2'>I'M</div></Heading>
         <Paragraph>
-I'm a 19-year-old web developer with a passion for creating innovative and user-friendly experiences. While I may be young, my coding skills are sharp and I'm constantly pushing myself to learn more.        </Paragraph>    
+          I'm a 19-year-old web developer with a passion for creating innovative and user-friendly experiences. While I may be young, my coding skills are sharp and I'm constantly pushing myself to learn more.
+        </Paragraph>    
         <Skills/>
       </div>
-      <Image className='relative ml-24 mt-24' width={500} src={Art} alt="Artwork" />
+      <Image className='w-screen justify-center relative lg:ml-24 lg:mt-56' width={500} src={Art} alt="Artwork" />
     </Container>
   )
 }

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import {Image} from "@nextui-org/react";
 
-const ImageContainer = styled.div`${tw`w-44 h-auto hover:animate-pulse`}`
+const ImageContainer = styled.div`${tw`w-40 lg:w-44 h-auto hover:animate-pulse`}`
 
 const Icon = () => {
   return (

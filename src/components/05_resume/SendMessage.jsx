@@ -39,8 +39,8 @@ const SendMessage = () => {
   }
   
   return (
-    <div className='mt-32 relative z-50'>
-      <label className='text-5xl flex justify-center mb-5'>
+    <div className='lg:mt-32 relative z-50'>
+      <label className='text-5xl flex text-center justify-center mb-5'>
         Send me a message
       </label>
       <div className='grid grid-cols-2 space-x-5'>

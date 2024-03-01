@@ -37,14 +37,14 @@ const learningData = {
 };
 
   return (
-    <div>
+    <div className='w-screen lg:w-auto'>
       <Divider className='my-8 bg-white opacity-50'/>
       <IconContainer startingText='Professional' endingText='Skills' type={skillsData} />
       <Divider className='my-8 bg-white opacity-50'/>
-      <div className='grid grid-cols-2'>
-        <div className='flex'>
+      <div className='grid lg:flex lg:grid-cols-2'>
+        <div className='hidden lg:flex lg:mb-0 mb-10'>
           <IconContainer startingText='Currently' endingText='Learning' type={learningData} />
-          <Divider orientation='vertical' className='mx-10 bg-white opacity-50'/>
+          <Divider orientation='vertical' className='hidden lg:block mx-10 bg-white opacity-50'/>
         </div>
         <IconContainer startingText='What I' endingText='Use' type={toolsData} />
       </div>

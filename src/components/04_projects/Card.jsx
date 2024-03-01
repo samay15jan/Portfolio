@@ -36,13 +36,13 @@ const Card = ({ src, name }) => {
   return (
     <div className='bg-[#8e20f1] transition ease-in-out delay-50 hover:ring hover:ring-[#23C562] hover:shadow-xl hover:shadow-[#23C562] shadow-2xl drop-shadow-2xl bg-opacity-5 m-4 p-5 rounded-3xl'>
         <Image className='shadow-2xl drop-shadow-2xl' src={src} alt={name}/>
-        <label className='text-lg flex justify-center mt-5 mb-2'>
+        <label className='text-2xl lg:text-lg flex justify-center mt-5 mb-2'>
           {name}
         </label>
-        <label className='text-sm flex justify-center opacity-60 text-center'>
+        <label className='text-xl lg:text-sm flex justify-center opacity-60 text-center'>
           {filteredUrl[0].Desc}
         </label>
-        <div className='flex mx-5 justify-between my-10'>
+        <div className='flex mx-10 lg:mx-5 justify-between my-10'>
           <Button type="Github" link={filteredUrl[0].Github}/>
           <Button type="Demo" link={filteredUrl[0].Demo}/>
         </div>

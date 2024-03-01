@@ -8,7 +8,7 @@ import Projects from './components/04_projects/Projects'
 import Resume from './components/05_resume/Resume'
 import Footer from './components/06_footer/Footer'
 
-const Container = styled.div`${tw`w-screen h-full bg-[#333448] text-white`}`
+const Container = styled.div`${tw`w-screen overflow-x-hidden h-full bg-[#333448] text-white`}`
 
 const App = () => {
   const homeRef = useRef(null);
@@ -28,7 +28,11 @@ const App = () => {
         scrollToProjects={() => scrollToTarget(projectsRef)}
         scrollToResume={() => scrollToTarget(resumeRef)} 
       />
-      <Home targetRef={homeRef} scrollToAbout={() => scrollToTarget(aboutRef)}/>
+      <Home 
+        targetRef={homeRef} 
+        scrollToAbout={() => scrollToTarget(aboutRef)}
+        scrollToResume={() => scrollToTarget(resumeRef)} 
+      />
       <About targetRef={aboutRef}/>
       <Projects targetRef={projectsRef}/>
       <Resume targetRef={resumeRef}/>

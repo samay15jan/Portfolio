@@ -4,7 +4,7 @@ import tw from 'twin.macro'
 import Icon from './Icon'
 
 const Heading = styled.h2`${tw`text-2xl text-center flex justify-center mb-5`}`
-const FlexContainer = styled.div`${tw`flex justify-center`}`
+const FlexContainer = styled.div`${tw`grid grid-cols-4 mx-10 lg:mx-0 lg:flex justify-center`}`
 
 const IconContainer = ({ startingText, endingText, type }) => {
     return (
