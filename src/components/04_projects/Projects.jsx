@@ -1,12 +1,11 @@
 import React from 'react'
-import Graph from './Graph'
 import Card from './Card'
 import Bingelord from '../../assets/projects/Bingelord.png'
 import Porsche_Replicant from '../../assets/projects/Porsche_Replicant.png'
 import Quantum_Quest from '../../assets/projects/Quantum_Quest.png'
 import ThoughtScape from '../../assets/projects/ThoughtScape.png'
 
-const Projects = () => {
+const Projects = ({ targetRef }) => {
 
   const projects = [
     {
@@ -32,7 +31,7 @@ const Projects = () => {
   ]
 
   return (
-    <div className='mt-40'>
+    <div className='pt-40' ref={targetRef}>
 
       <label className='text-4xl flex justify-center mb-5'>
         My Recent
@@ -52,7 +51,6 @@ const Projects = () => {
               </div>
             ))}
       </div>
-      <Graph/>
     </div>
   )
 }

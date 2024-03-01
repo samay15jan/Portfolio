@@ -11,7 +11,7 @@ const Button = styled.button(({ hideArrow }) => [
     : tw`mt-12 mr-9 w-14 h-14 ring ring-2 ring-opacity-50 ring-white rounded-full`
 ])
 
-const ScrollDown = ({ align }) => {
+const ScrollDown = ({ align, scrollToAbout }) => {
   const [hideArrow, setHideArrow] = useState(false)
   const controls = useAnimation();
 
@@ -25,6 +25,7 @@ const ScrollDown = ({ align }) => {
         ease: "easeInOut"
       }
     })
+    setTimeout(() => {scrollToAbout()},1000)
     setTimeout(() => {
       controls.start({
         stroke:"#23C562", 
@@ -33,7 +34,7 @@ const ScrollDown = ({ align }) => {
           duration: 0,
           ease: "easeInOut"
         }
-      })  
+      })
       setHideArrow(false)
     }, 5000);
   }

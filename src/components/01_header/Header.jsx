@@ -4,21 +4,18 @@ import tw from 'twin.macro'
 import Icon from './Icon'
 import Socials from './Socials'
 import Menus from './Menus'
-import { IoHomeSharp, IoHomeOutline, IoDocumentTextSharp, IoDocumentTextOutline } from "react-icons/io5";
-import { FaUser, FaRegUser } from "react-icons/fa";
-import { RiBrush4Line, RiBrush4Fill } from "react-icons/ri";
 
-const Container = styled.div`${tw`w-screen fixed z-50 flex justify-between py-8 px-16 bg-[#333448] bg-opacity-90`}`
+const Container = styled.div`${tw`w-screen fixed z-50 flex justify-between pb-4 pt-6 px-10 bg-[#333448] bg-opacity-90`}`
 
-const Header = () => {
+const Header = ({ scrollToHome, scrollToAbout, scrollToProjects, scrollToResume }) => {
   return (
     <Container>
         <Icon/>
-        <div className='mt-1 fixed w-screen flex justify-center space-x-6'>
-          <Menus Text="Home"/>
-          <Menus Text="About"/>
-          <Menus Text="Projects"/>
-          <Menus Text="Contact"/>
+        <div className='mt-1 absolute w-screen flex justify-center space-x-6'>
+          <Menus Text="Home" scrollClick={scrollToHome}/>
+          <Menus Text="About" scrollClick={scrollToAbout} />
+          <Menus Text="Projects" scrollClick={scrollToProjects} />
+          <Menus Text="Contact" scrollClick={scrollToResume} />
         </div>
         <Socials/>
     </Container>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled from 'styled-components'
 import tw from 'twin.macro'
 import Header from './components/01_header/Header'
@@ -11,13 +11,27 @@ import Footer from './components/06_footer/Footer'
 const Container = styled.div`${tw`w-screen h-full bg-[#333448] text-white`}`
 
 const App = () => {
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const resumeRef = useRef(null);
+
+  const scrollToTarget = (ref) => {
+    ref.current.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <Container style={{ fontFamily: 'Montserrat Alternates, sans-serif' }}>
-      <Header />
-      <Home />
-      <About />
-      <Projects />
-      <Resume />
+      <Header
+        scrollToHome={() => scrollToTarget(homeRef)}
+        scrollToAbout={() => scrollToTarget(aboutRef)}
+        scrollToProjects={() => scrollToTarget(projectsRef)}
+        scrollToResume={() => scrollToTarget(resumeRef)} 
+      />
+      <Home targetRef={homeRef} scrollToAbout={() => scrollToTarget(aboutRef)}/>
+      <About targetRef={aboutRef}/>
+      <Projects targetRef={projectsRef}/>
+      <Resume targetRef={resumeRef}/>
       <Footer />
     </Container>
   )

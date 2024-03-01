@@ -11,11 +11,11 @@ const Button = styled.button`
     opacity: 0.5;
 }`
 
-const Menus = ({Text}) => {
+const Menus = ({ Text, scrollClick }) => {
     const [hoverValue, setHoverValue] = useState(0)
 
   return (
-    <Container>
+    <Container onClick={scrollClick}>
         <Button 
             onMouseEnter={() => setHoverValue(100)} 
             onMouseLeave={() => setHoverValue(0)}

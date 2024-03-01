@@ -2,9 +2,9 @@ import React from 'react'
 import Connect from './Connect'
 import SendMessage from './SendMessage'
 
-const Resume = () => {
+const Resume = ({ targetRef }) => {
   return (
-    <div className='grid grid-cols-2 mx-20 mt-32 mb-24'>
+    <div ref={targetRef} className='grid grid-cols-2 mx-20 mt-32 mb-24'>
       <Connect />
       <SendMessage />
     </div>

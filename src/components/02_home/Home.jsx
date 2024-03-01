@@ -6,19 +6,19 @@ import Text from './Text'
 import ContactButton from './ContactButton'
 import ScrollDown from './ScrollDown'
 
-const Container = styled.div`${tw`pt-36 grid grid-cols-2 justify-between`}`
+const Container = styled.div`${tw`pt-44 grid grid-cols-2 justify-between`}`
 
-const Home = () => {
+const Home = ({ targetRef, scrollToAbout }) => {
   return (
-    <Container>
+    <Container ref={targetRef}>
       <div className='grid-rows-1 ml-16'>
-        <Text Top_Text1='Samay' Top_Text2='Kumar' Bottom_Text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam animi cumque pariatur, unde distinctio eum incidunt hic' align='left'/>
+        <Text Top_Text1='Samay' Top_Text2='Kumar' Bottom_Text='Coding Enthusiast & Recent High School Graduate, Transforming Ideas into Seamless Digital Experiences...' align='left'/>
         <ContactButton align='left'/>
       </div>
         <Art/>
       <div className='grid-cols-1 mr-16'>
-        <Text Top_Text1='Web - ' Top_Text2='Developer' Bottom_Text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam animi cumque' align='right'/>
-        <ScrollDown align='right'/>
+        <Text Top_Text1='Web - ' Top_Text2='Developer' Bottom_Text='Crafting sleek and dynamic websites with a blend of functionality, and UI design."' align='right'/>
+        <ScrollDown align='right' scrollToAbout={scrollToAbout}/>
       </div>
     </Container>
   )
