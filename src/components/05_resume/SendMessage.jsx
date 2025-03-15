@@ -39,7 +39,7 @@ const SendMessage = () => {
   }
   
   return (
-    <div className='lg:mt-32 relative z-50'>
+    <div className='lg:mt-32 relative z-40'>
       <label className='text-5xl flex text-center justify-center mb-5'>
         Send me a message
       </label>

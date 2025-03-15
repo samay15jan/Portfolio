@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import { Divider } from '@nextui-org/react'
 
-const Container = styled.div`${tw`relative z-50 bg-[#333448] w-screen text-center bg-[#333448]`}`
+const Container = styled.div`${tw`relative z-40 bg-[#333448] w-screen text-center bg-[#333448]`}`
 const Heading = styled.div`${tw`text-lg font-bold mb-5 flex justify-center`}`
 const SubHeading = styled.div`${tw`text-sm pb-5 mr-2`}`
 
