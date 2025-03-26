@@ -2,15 +2,10 @@ import React from "react";
 import { FaGithub } from "react-icons/fa6";
 import { BsArrowUpRight } from "react-icons/bs";
 import { MdEmojiObjects } from "react-icons/md";
-import { RiNumber1, RiNumber2, RiNumber3, RiNumber4 } from "react-icons/ri";
 
-const ButtonGithub = ({filteredUrl}) => {
+const ButtonGithub = ({ filteredUrl }) => {
   return (
-    <a
-    href={filteredUrl.Github}
-    target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href={filteredUrl.Github} target="_blank" rel="noopener noreferrer">
       <button className="ring-2 ring-gray-500 text-white p-4 ml-2 rounded-full">
         <FaGithub size={25} />
       </button>
@@ -50,18 +45,43 @@ const ButtonDemo = ({ setHoveredDemo, hoveredDemo, filteredUrl }) => {
     </a>
   );
 };
-const NumberBar = ({ Projects, setSelectedProject }) => {
+
+const NumberBar = ({ setSelectedProject, currentSelected }) => {
   return (
-    <div className="grid grid-col-1">
-      {Projects.map((project, index) => (
-        <button
-          key={index}
-          onClick={() => setSelectedProject(index)}
-          className="mt-2 text-white p-3 rounded-full ring ring-gray-500 hover:bg-white hover:text-[#121212] transition ease-in-out delay-50"
-        >
-          {React.createElement(eval(`RiNumber${index + 1}`))}
-        </button>
-      ))}
+    <div className="grid grid-cols-1 h-full">
+      <button
+        onClick={() => setSelectedProject(0)}
+        className={`h-full w-full flex items-center justify-center p-3 rounded-full transition ease-in-out delay-50 ring ring-gray-500
+            ${
+              currentSelected === 0
+                ? "text-black bg-white"
+                : "text-white hover:bg-white hover:text-[#121212]"
+            }`}
+      >
+        1
+      </button>
+      <button
+        onClick={() => setSelectedProject(1)}
+        className={`mt-2 h-full w-full flex items-center justify-center p-3 rounded-full transition ease-in-out delay-50 ring ring-gray-500
+            ${
+              currentSelected === 1
+                ? "text-black bg-white"
+                : "text-white hover:bg-white hover:text-[#121212]"
+            }`}
+      >
+        2
+      </button>
+      <button
+        onClick={() => setSelectedProject(2)}
+        className={`mt-5 h-full w-full flex items-center justify-center p-3 rounded-full transition ease-in-out delay-50 ring ring-gray-500
+            ${
+              currentSelected === 2
+                ? "text-black bg-white"
+                : "text-white hover:bg-white hover:text-[#121212]"
+            }`}
+      >
+        3
+      </button>
     </div>
   );
 };
