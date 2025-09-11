@@ -142,8 +142,8 @@ export default function TimelinePage() {
                     showTooltip={false}
                     displayOverlayContent={true}
                     overlayContent={
-                      <div className="p-2 text-center flex border-2 border-black rounded-xl">
-                        <p className="text-sm font-medium">{item.text}</p>
+                      <div className="text-center px-2">
+                        <h3 className="mt-1 text-lg font-medium">{item.text}</h3>
                       </div>
                     }
                   />
