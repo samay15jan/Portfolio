@@ -1,9 +1,9 @@
 ---
 import { Image } from "astro:assets";
-import svgl from "../../public/svgl.png";
-import stockin from "../../public/stockin.png";
-import moviesfordevs from "../../public/moviesfordevs.png";
-import velez from "../../public/velez.png";
+import sparklines from "../../public/sparklines.png";
+import bingelord from "../../public/bingelord.jpg";
+import heimos from "../../public/heimos.png";
+import porscheReplicant from "../../public/porscheReplicant.png";
 
 interface Project {
   title: string;
@@ -15,31 +15,31 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "MoviesForDevs",
-    image: moviesfordevs as ImageMetadata,
-    link: "https://github.com/gothsec/MoviesForDevs",
-    preview: "https://movies-for-devs.vercel.app",
+    title: "Sparklines",
+    image: sparklines as ImageMetadata,
+    link: "https://github.com/samay15jan/sparklines",
+    preview: "https://sparklines.vercel.app",
     status: "Deployed",
   },
   {
-    title: "StockIn",
-    image: stockin as ImageMetadata,
-    link: "https://github.com/gothsec/stockin-demo",
-    preview: "https://stockin-demo.vercel.app",
+    title: "BingeLord",
+    image: bingelord as ImageMetadata,
+    link: "https://github.com/samay15jan/bingelord",
+    preview: "https://bingelord.samay15jan.xyz",
+    status: "Deployed",
+  },
+  {
+    title: "HeimOS",
+    image: heimos as ImageMetadata,
+    link: "https://github.com/samay15jan/heimos",
+    preview: "https://github.com/samay15jan/heimos",
     status: "On Development",
   },
   {
-    title: "Svgl.app",
-    image: svgl as ImageMetadata,
-    link: "https://github.com/pheralb/svgl",
-    preview: "https://svgl.app",
-    status: "Contributor",
-  },
-  {
-    title: "Rifas Velez Web",
-    image: velez as ImageMetadata,
-    link: "https://github.com/Buga-Software/rifasvelez-web",
-    preview: "https://www.rifasvelez.com",
+    title: "Porsche Replicant",
+    image: porscheReplicant as ImageMetadata,
+    link: "https://github.com/samay15jan/porsche-replicant",
+    preview: "https://garage.samay15jan.xyz",
     status: "Deployed",
   },
 ];
@@ -117,7 +117,7 @@ const projects: Project[] = [
     </div>
     <a
       target="_blank"
-      href="https://github.com/Gothsec?tab=repositories"
+      href="https://github.com/samay15jan?tab=repositories"
       aria-label="GitHub"
       class="w-full flex items-center justify-center gap-2 mt-9 text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-[var(--white-icon-tr)] p-3 rounded-full bg-[#1414149c] hover:bg-[var(--white-icon-tr)] hover:scale-105"
     >
