@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  portfolio:
+    image: ghcr.io/samay15jan/portfolio:latest
+    container_name: portfolio
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 86400 --cleanup --label-enable
+
+
