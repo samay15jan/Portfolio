@@ -49,7 +49,9 @@ jobs:
           username: ${{ secrets.OCI_USER }}
           key: ${{ secrets.OCI_KEY }}
           script: |
-            curl -O https://gist.githubusercontent.com/samay15jan/296498459d1607226b8a59d4ae7b3385/raw/bd7975ea6d62cc268f2848187943043dfafda7a4/blue-green_deploy.sh
+            curl -fsSL \
+            https://gist.githubusercontent.com/samay15jan/296498459d1607226b8a59d4ae7b3385/raw/blue-green_deploy.sh \
+            -o blue-green_deploy.sh
             chmod +x blue-green_deploy.sh
             ./blue-green_deploy.sh
             rm blue-green_deploy.sh
