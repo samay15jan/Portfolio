@@ -59,6 +59,7 @@ src/
 ```
 
 ## Deployment Overview
+![Preview](public/main.png)
 
 The portfolio is fully self-hosted on an Oracle Cloud VM and follows an automated deployment pipeline.
 
